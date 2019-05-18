@@ -26,6 +26,8 @@ app.get('/', function (req, res) {
 //Nesta linha, dizemos para o express que queremos utilizar o dominio '/' para acessar as rotas de aluno definidas no outro arquivo. A requisição cai aqui e entra no arquivo route para que dali tome seu caminho correto e possa retornar a quem fez requisição.
 app.use('/', AlunoRoute)
 
+app.use('/', FuncionarioRoute)
+
 
 app.listen(port, function () {
     console.log(`API LISTEN ON PORT ${port}`)
