@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         USUARIOPERFIL: {
             type: DataTypes.INTEGER,
+            required: true,
             max: 1,
             allowNull: false,
         },
