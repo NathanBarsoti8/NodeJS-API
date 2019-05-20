@@ -21,10 +21,9 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
         },
         USUARIOPERFIL: {
-            type: DataTypes.TINYINT,
+            type: DataTypes.INTEGER,
             max: 1,
             allowNull: false,
-            defaultValue: 1,
         },
         STATUS: {
             type: DataTypes.TINYINT,
