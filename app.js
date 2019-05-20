@@ -28,6 +28,8 @@ app.use('/', AlunoRoute)
 
 app.use('/', FuncionarioRoute)
 
+app.use('/', CursoRoute)
+
 
 app.listen(port, function () {
     console.log(`API LISTEN ON PORT ${port}`)
