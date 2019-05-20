@@ -10,6 +10,9 @@ app.use(cors())
 
 //Importando as rotas implementadas no outro arquivo para que possam ser usadas no arquivo principal do servidor.
 const AlunoRoute = require('./app/routes/aluno')
+const FuncionarioRoute = require('./app/routes/funcionario')
+const CursoRoute = require('./app/routes/curso')
+const PagamentoRoute = require('./app/routes/pagamento')
 
 
 //CONFIG bodyParser
