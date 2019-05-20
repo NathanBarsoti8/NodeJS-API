@@ -30,6 +30,8 @@ app.use('/', FuncionarioRoute)
 
 app.use('/', CursoRoute)
 
+app.use('/', PagamentoRoute)
+
 
 app.listen(port, function () {
     console.log(`API LISTEN ON PORT ${port}`)
