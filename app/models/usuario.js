@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         USUARIOLOGIN: {
             type: DataTypes.STRING,
             required: true,
-            max: 20,
+            max: 50,
             allowNull: false,
         },
         USUARIOSENHA: {
