@@ -1,24 +1,30 @@
 module.exports = (sequelize, DataTypes) => {
 
-    const CursoModel = sequelize.define('CursoModel', {
-        CURSOCOD: {
+    const UsuarioModel = sequelize.define('UsuarioModel', {
+        USUARIOCOD: {
             type: DataTypes.INTEGER,
             required: true,
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
         },
-        CURSONOME: {
-            type: DataTypes.STRING,
-            required: true,
-            max: 50,
-            allowNull: false,
-        },
-        CURSOVALOR: {
+        USUARIOLOGIN: {
             type: DataTypes.STRING,
             required: true,
             max: 20,
             allowNull: false,
+        },
+        USUARIOSENHA: {
+            type: DataTypes.STRING,
+            required: true,
+            max: 20,
+            allowNull: false,
+        },
+        USUARIOPERFIL: {
+            type: DataTypes.TINYINT,
+            max: 1,
+            allowNull: false,
+            defaultValue: 1,
         },
         STATUS: {
             type: DataTypes.TINYINT,
@@ -28,9 +34,9 @@ module.exports = (sequelize, DataTypes) => {
         }
     },
         {
-            tableName: 'curso',
+            tableName: 'usuario',
             timestamps: false
         }
     )
-    return CursoModel
+    return UsuarioModel
 }
