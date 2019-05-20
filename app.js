@@ -13,6 +13,7 @@ const AlunoRoute = require('./app/routes/aluno')
 const FuncionarioRoute = require('./app/routes/funcionario')
 const CursoRoute = require('./app/routes/curso')
 const PagamentoRoute = require('./app/routes/pagamento')
+const UsuarioRoute = require('./app/routes/usuario')
 
 
 //CONFIG bodyParser
@@ -34,6 +35,8 @@ app.use('/', FuncionarioRoute)
 app.use('/', CursoRoute)
 
 app.use('/', PagamentoRoute)
+
+app.use('/', UsuarioRoute)
 
 
 app.listen(port, function () {
