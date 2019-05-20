@@ -13,7 +13,7 @@ class Funcionario {
     getById(req, res) {
         FuncionarioModel.findOne({
             where: { 
-                funcionarioCOD: req.params.id
+                FUNCCOD: req.params.id
             } 
         })
             .then(funcionario => res.json(funcionario))
@@ -29,7 +29,7 @@ class Funcionario {
     update(req, res) {
         FuncionarioModel.update(req.body, {
             where: {
-                funcionarioCOD: req.params.id,
+                FUNCCOD: req.params.id,
                 STATUS: 1
             }
         })
@@ -39,7 +39,7 @@ class Funcionario {
     delete(req, res) {
         FuncionarioModel.update({ STATUS: 0 }, {
             where: {
-                funcionarioCOD: req.params.id,
+                FUNCCOD: req.params.id,
                 STATUS: 1
             }
         })
