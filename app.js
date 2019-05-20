@@ -27,7 +27,8 @@ app.get('/', function (req, res) {
     res.send("API Funcionando")
 })
 
-//Nesta linha, dizemos para o express que queremos utilizar o dominio '/' para acessar as rotas de aluno definidas no outro arquivo. A requisição cai aqui e entra no arquivo route para que dali tome seu caminho correto e possa retornar a quem fez requisição.
+//Nesta linha, dizemos para o express que queremos utilizar o dominio '/' para acessar as rotas definidas no outro arquivo. 
+//A requisição cai aqui e entra no arquivo route para que dali tome seu caminho correto e possa retornar a quem fez requisição.
 app.use('/', AlunoRoute)
 
 app.use('/', FuncionarioRoute)
