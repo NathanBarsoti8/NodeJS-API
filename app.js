@@ -5,7 +5,8 @@ const app = express();
 const bodyParser = require('body-parser'); // request vem e ele converte o corpo da requisição já para JSON
 const port = process.env.PORT || 3000
 
-//O cors é responsável por permitir que páginas web de outros dominios acessem seus recursos. Sem o uso do cors, o acesso a api permanece bloqueado.
+//O cors é responsável por permitir que páginas web de outros dominios acessem seus recursos. 
+//Sem o uso do cors, o acesso a api permanece bloqueado.
 app.use(cors())
 
 //Importando as rotas implementadas no outro arquivo para que possam ser usadas no arquivo principal do servidor.
